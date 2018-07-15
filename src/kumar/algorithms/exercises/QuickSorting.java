@@ -1,5 +1,11 @@
 package kumar.algorithms.exercises;
 
+/**
+ * 
+ * @author Kumar
+ * This is an implementation of Quick Sorting.
+ *
+ */
 public class QuickSorting {
 	static int sample[] = {87,235,64,84,23,222,675,674,234,2,4,6,74,34,26,95};
 	public static void main(String[] args) {

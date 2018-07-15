@@ -2,6 +2,14 @@ package kumar.algorithms.exercises;
 
 import java.util.Scanner;
 
+/**
+ * 
+ * @author Kumar
+ * This is an implementation of a Binay Search Algorithm.
+ * This has an time complexity of O(logn)
+ *
+ */
+
 public class BinarySearchAlgorithm {
 	private static int[] sample = {1,3,5,6};
 	public static void main (String[]args){

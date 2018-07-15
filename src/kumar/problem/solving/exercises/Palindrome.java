@@ -2,7 +2,9 @@ package kumar.problem.solving.exercises;
 
 import java.util.Scanner;
 
-/* @author : Kumar
+/**
+ * 
+ * @author Kumar
  * This program is to demonstrate the implementation of Palindrome
  * using iteration Vs Recursive methods.
  * 

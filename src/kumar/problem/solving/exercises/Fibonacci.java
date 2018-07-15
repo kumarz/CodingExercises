@@ -2,7 +2,8 @@ package kumar.problem.solving.exercises;
 
 import java.util.Scanner;
 
-/* author : kumar
+/**
+ * @author  Kumar
  * This program is to demonstrate the implementation of Fibonacci
  * using iteration Vs Recursive methods.
  * 

@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
+/**
+ * 
+ * @author Kumar
+ * This is just an implementation of Comparable interface that overrides CompateTo method
+ * for sorting objects based on our criteria.
+ *
+ */
 public class ComparableExample implements Comparable<ComparableExample>{
 	int age;
 	String name;
@@ -22,7 +29,7 @@ public class ComparableExample implements Comparable<ComparableExample>{
 		
 		ComparableExample obj2 = new ComparableExample();
 		obj2.age = 5;
-		obj2.name = "Geetha";
+		obj2.name = "Brad";
 		
 		list.add(obj);
 		list.add(obj1);
