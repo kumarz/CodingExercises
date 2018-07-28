@@ -5,8 +5,8 @@ import java.util.PriorityQueue;
 /***
  * 
  * @author Kumar
- * This is an simple palindrome exercise using Linked List
- *
+ * This is an sorting of an Array of Integers Exercise.
+ *  *
  */
 public class SortingArrayOfIntegers {
 
