@@ -1,4 +1,4 @@
-package kumar.dataStrucutres.LinkedList.exercises;
+package kumar.dataStructures.LinkedList.exercises;
 
 import java.util.ArrayList;
 import java.util.List;

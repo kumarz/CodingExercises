@@ -1,4 +1,4 @@
-package kumar.dataStrucutres.BST.exercises;
+package kumar.dataStructures.BST.exercises;
 
 public class BinaryTreeTraversal {
 

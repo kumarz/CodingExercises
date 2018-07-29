@@ -1,4 +1,4 @@
-package kumar.dataStrucutres.LinkedList.exercises;
+package kumar.dataStructures.LinkedList.exercises;
 
 /**
  * This exercise is to reverse a linked list
