@@ -1,17 +1,14 @@
-package kumar.problem.solving.exercises;
+package kumar.dataStrucutres.LinkedList.exercises;
 
 /**
  * 
  * @author Kumar
  * This problem is to figure out the efficient way of merging two list
- *
+ * Java program to merge two sorted linked list such that merged 
+ * 
  */
 
-//Java program to merge two sorted linked list such that merged 
-//list is in reverse order
-
-//Linked List Class
-class MergeTwoSortedLinkedList {
+public class MergeTwoSortedLinkedList {
 
 	Node head; // head of list
 	static Node a, b;
@@ -104,4 +101,3 @@ class MergeTwoSortedLinkedList {
 	}
 }
 
-//This code has been contributed by Mayank Jaiswal

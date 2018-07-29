@@ -15,15 +15,14 @@ import java.util.PriorityQueue;
  *
  */
 public class MostFrequentColorinListOfList {
-
+	static List<String> a = new ArrayList<String>();
+	static List<String> b = new ArrayList<String>();
+	static List<String> c = new ArrayList<String>();
+	static List<List<String>> d = new ArrayList<List<String>>();
+	static Map<String, Integer> count = new HashMap<String, Integer>();
+	static PriorityQueue<Integer> total = new PriorityQueue<Integer>(Collections.reverseOrder());
+	static List<String> output = new ArrayList<String>();
 	public static void main(String[] args) {
-		List<String> a = new ArrayList<String>();
-		List<String> b = new ArrayList<String>();
-		List<String> c = new ArrayList<String>();
-		List<List<String>> d = new ArrayList<List<String>>();
-		Map<String, Integer> count = new HashMap<String, Integer>();
-		PriorityQueue<Integer> total = new PriorityQueue<Integer>(Collections.reverseOrder());
-		List<String> output = new ArrayList<String>();
 		
 		a.add("RED");
 		a.add("RED");

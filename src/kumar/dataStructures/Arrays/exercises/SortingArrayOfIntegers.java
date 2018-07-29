@@ -1,4 +1,4 @@
-package kumar.problem.solving.exercises;
+package kumar.dataStructures.Arrays.exercises;
 
 import java.util.PriorityQueue;
 

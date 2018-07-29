@@ -1,9 +1,7 @@
-package kumar.problem.solving.exercises;
-
-import kumar.problem.solving.exercises.MergeTwoSortedLinkedList.Node;
+package kumar.dataStrucutres.LinkedList.exercises;
 
 /**
- * This exercise is to rever a linked list
+ * This exercise is to reverse a linked list
  * @author Kumar
  *
  */
@@ -13,7 +11,7 @@ public class ReverseLinkedList {
 	static Node a, b;
 
 	/* Node Class */
-	static class Node {
+	public static class Node {
 
 		Integer data;
 		Node next;
