@@ -1,4 +1,4 @@
-package kumar.coding.exercises.problemSolving.String;
+package kumar.coding.exercises.problemSolving;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package kumar.coding.exercises.problemSolving.String;
+package kumar.coding.exercises.problemSolving.Arrays;
 
 import java.util.ArrayList;
 import java.util.List;
