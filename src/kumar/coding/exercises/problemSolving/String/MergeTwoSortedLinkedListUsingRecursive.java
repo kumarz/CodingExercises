@@ -7,9 +7,6 @@ package kumar.coding.exercises.problemSolving.String;
  *
  */
 
-//Java program to merge two sorted linked list such that merged 
-//list is in reverse order
-
 //Linked List Class
 class MergeTwoSortedLinkedListUsingRecursive {
 
@@ -66,13 +63,11 @@ class MergeTwoSortedLinkedListUsingRecursive {
 			if(node1 == null && node2 != null) {
 				res = res.next;
 				res.next = node2;
-				node2 = node2.next;
 			}
 			
 			if(node1 != null && node2 == null) {
 				res = res.next;
 				res.next = node1;
-				node1 = node1.next;
 			}
 			
 			res = res.next;
@@ -83,23 +78,6 @@ class MergeTwoSortedLinkedListUsingRecursive {
 
 	}
 	
-	public static Node determineHead(Node node1, Node node2, Node res) {
-		// if both of them have nodes present traverse them
-		if (node1 != null && node2 != null) {
-
-			// Now compare both nodes current data
-			if (node1.data >= node2.data) {
-				res = node2;
-				// node2 = node2.next;
-			} else {
-				res = node1;
-				// node1 = node1.next;
-			}
-		}
-		
-		return res;
-	}
-
 	public static void main(String[] args) {
 
 		MergeTwoSortedLinkedListUsingRecursive list = new MergeTwoSortedLinkedListUsingRecursive();
@@ -115,6 +93,7 @@ class MergeTwoSortedLinkedListUsingRecursive {
 		list.b = new Node(2);
 		list.b.next = new Node(3);
 		list.b.next.next = new Node(20);
+		list.b.next.next.next = new Node(22);
 
 		System.out.println("List a before merge :");
 		list.printlist(a);
@@ -128,4 +107,3 @@ class MergeTwoSortedLinkedListUsingRecursive {
 	}
 }
 
-//This code has been contributed by Mayank Jaiswal

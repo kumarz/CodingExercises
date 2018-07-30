@@ -20,7 +20,7 @@ public class BalanceBrackets {
 	
 
 	public static void main(String[] args) {
-		String input = "{{{}{{}";
+		String input = "{}{}{{{}{{}";
 		StringBuffer output = new StringBuffer();
 		
 		// to count the brackers
