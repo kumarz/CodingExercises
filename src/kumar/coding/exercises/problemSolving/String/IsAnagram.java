@@ -52,18 +52,15 @@ public class IsAnagram {
 		List<Character> sortedA = new ArrayList<Character>();
 		List<Character> sortedB = new ArrayList<Character>();
 		
-		for(char item: s1.toCharArray()){
-			a.offer(item);
-		}
-		
-		for(char item: s2.toCharArray()){
-			b.offer(item);
+		for(int count = 0 ; count < s1.length(); count++){
+			a.offer(s1.charAt(count));
+			b.offer(s2.charAt(count));
 		}
 		
 		for(int count = 0 ; count < s1.length(); count++){
 			sortedA.add(a.poll());
 			sortedB.add(b.poll());
-			if(sortedA.get(count) != sortedB.get(count)){
+			if(!sortedA.get(count).equals(sortedB.get(count))){
 				return false;
 			}
 		}
