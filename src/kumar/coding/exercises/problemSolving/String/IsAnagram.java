@@ -8,7 +8,7 @@ import java.util.PriorityQueue;
 
 /**
  * This program is to find if two given strings are anagram or not.
- * @author kumas12
+ * @author Kumar
  * 
  * Questions: 
  * is any special characters allowed
