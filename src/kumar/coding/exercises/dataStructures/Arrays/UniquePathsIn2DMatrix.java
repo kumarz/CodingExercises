@@ -22,7 +22,7 @@ public class UniquePathsIn2DMatrix {
 			
 			int count =  uniquePaths(island.length, island[0].length);
 			
-			System.out.println("Total unique paths found " + count);
+			System.out.println("\n\nTotal unique paths found " + count);
 		}
 
 		/**
@@ -55,17 +55,19 @@ public class UniquePathsIn2DMatrix {
 	        int[][] matrix = new int[m][n];
 	        
 	        for(int i = 0; i < m ; i++){
-	            
+	        	System.out.println("");
 	            for(int j = 0; j < n; j++){
 	                
 	                if(i == 0 || j == 0){
 	                    matrix[i][j] = 1;
 	                }else{
 	                   matrix[i][j] = matrix[i-1][j] + matrix[i][j-1];
+	                   System.out.print(matrix[i][j] +  " ");
 	                }
 	            }
+	            
 	        }
-	    
+	        
 	        return matrix[m-1][n-1];
 	    }
 
