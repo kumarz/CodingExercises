@@ -1,6 +1,8 @@
 package kumar.coding.exercises.problemSolving.Arrays;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * 
@@ -26,53 +28,33 @@ public class MissingNumber {
 
 	public static void main(String[] args) {
 		int[] input = {3,0,1};
-		System.out.println(appraoch1(input));
-		System.out.println(appraoch2(input));
+		System.out.println(approach1(input));
+		System.out.println(approach2(input));
 	}
 
-	private static int appraoch2(int[] nums) {
+	private static int approach1(int[] nums) {
 
-        boolean isZeroPresent = false;
-        
-        // added two if statements, since the test cases where expecting min 3 elements
-        if(nums.length == 2 && nums[0] == 0 && nums[1] == 1){
-            return 2;
-        }
-        if(nums.length == 2 && nums[0] == 1 && nums[1] == 0){
-            return 2;
-        }
-        
-        // to check for array more than 3 elements.
-        Arrays.sort(nums);
-        int max = nums[nums.length-1];
-        int total = (max*(max+1))/2;
-        int sum = 0;
-        for(int item : nums){
-            if(item == 0){
-                isZeroPresent = true;
+        Set<Integer> numSet = new HashSet<Integer>();
+        for (int num : nums) numSet.add(num);
+
+        int expectedNumCount = nums.length + 1;
+        for (int number = 0; number < expectedNumCount; number++) {
+            if (!numSet.contains(number)) {
+                return number;
             }
-            sum += item;
         }
-        
-        // zero is mandatory
-        if(!isZeroPresent){
-            return 0;
-        }
-        
-        return (total - sum) == 0 ? nums[nums.length-1]+1: (total - sum);
+        return -1;
 	}
 
-	private static int appraoch1(int[] nums) {
-		 // it is important to use XOR operation, as oppose to addition
-	      // addition-based solution will suffer from overflowing for large numbers
-	      
-	      int xorAll = 0;
-	      int xor = nums[0];
-	      for (int i = 1; i< nums.length; i++){
-	        xorAll ^= i;
-	        xor ^= nums[i];
-	      }
-	      return xor ^ (xorAll ^ nums.length);
+	private static int approach2(int[] nums) {
+	 // it is important to use XOR operation, as oppose to addition
+      // addition-based solution will suffer from overflowing for large numbers
+      
+	   int missing = nums.length;
+        for (int i = 0; i < nums.length; i++) {
+            missing ^= i ^ nums[i];
+        }
+        return missing;
 	}
 
 }
