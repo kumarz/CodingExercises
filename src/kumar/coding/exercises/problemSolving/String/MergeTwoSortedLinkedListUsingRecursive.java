@@ -50,28 +50,24 @@ class MergeTwoSortedLinkedListUsingRecursive {
 			return node1;
 		}
 		
-		while(node1 != null && node2 != null & res != null) {
+		while(node1 != null && node2 != null) {
 			if(node1.data <= node2.data) {
 				res.next = node1;
+				res = node1;
 				node1 = node1.next;
-				
 			}else {
 				res.next = node2;
+				res = node2;
 				node2 = node2.next;
 			}
-			
-			if(node1 == null && node2 != null) {
-				res = res.next;
-				res.next = node2;
-			}
-			
-			if(node1 != null && node2 == null) {
-				res = res.next;
-				res.next = node1;
-			}
-			
-			res = res.next;
-			
+		}
+		
+		if(node1 == null) {
+			res.next = node2;
+		}
+		
+		if(node2 == null) {
+			res.next = node1;
 		}
 
 		return dummy.next;
