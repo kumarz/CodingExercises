@@ -3,7 +3,6 @@ package kumar.coding.exercises.dataStructures.LinkedList;
 import java.util.PriorityQueue;
 
 import kumar.codeing.exercise.model.ListNode;
-import kumar.coding.exercises.dataStructures.LinkedList.MergeTwoSortedLinkedList.Node;
 
 /*Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
 
