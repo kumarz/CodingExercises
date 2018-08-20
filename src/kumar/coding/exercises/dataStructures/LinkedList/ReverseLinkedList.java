@@ -42,27 +42,46 @@ public class ReverseLinkedList {
 		ReverseLinkedList.a.next.next.next.next = new Node(5);
 		printlist(ReverseLinkedList.a);
 		System.out.println( "\nAfter reversing the List");
-		printlist(reverseList(ReverseLinkedList.a));
+		printlist(approach2(ReverseLinkedList.a));
 	}
 
 	private static Node reverseList(Node current) {
-		System.out.println(current.data + "1");
+		System.out.println(current.data + "--1");
 		if(current == null) {
 			System.out.println(current.data);
 			return null;
 		}else if (current.next == null) {
-			System.out.println(current.data + "2");
+			System.out.println(current.data + "--2");
 			return current;
 		}else {
-			System.out.println(current.data + "3");
+			System.out.println(current.data + "--3");
 			Node nextNode = current.next;
 			current.next = null;
 			Node result = reverseList(nextNode);
-			System.out.println(nextNode.data + "4");
+			System.out.println(nextNode.data + "--4");
 			nextNode.next = current;
-			System.out.println(nextNode.next.data + "5");
-			System.out.println(result.data + "6");
+			System.out.println(nextNode.next.data + "--5");
+			System.out.println(result.data + "--6");
 			return result;
 		}
+	}
+	
+	private static Node approach2(Node head){
+		if(head == null){
+			return null;
+		}
+		
+		Node prev = null;
+		Node current = head;
+		
+		while(current != null){
+			Node temp = current.next;
+			current.next = prev;
+			prev = current;
+			current = temp;
+		}
+		
+		return prev;
+		
 	}
 }
