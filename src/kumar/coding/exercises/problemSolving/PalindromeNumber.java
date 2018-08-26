@@ -7,7 +7,7 @@ package kumar.coding.exercises.problemSolving;
  *
  */
 
-public class ReverseInteger {
+public class PalindromeNumber {
 
 	public static void main(String[] args) {
 		int input = 1001;
