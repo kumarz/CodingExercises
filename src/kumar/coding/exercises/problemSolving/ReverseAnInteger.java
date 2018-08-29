@@ -12,6 +12,8 @@ public class ReverseAnInteger {
 
 	public static void main(String[] args) {
 		System.out.println(execute(1534236469));
+		System.out.println(execute(-121));
+		System.out.println(execute(161));
 	}
 
 	private static int execute(int x) {
