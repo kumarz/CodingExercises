@@ -1,5 +1,11 @@
 package kumar.coding.exercises.problemSolving.Arrays;
-
+/**
+ * This is to find minimum in a roated sorted array
+ * @author Kumar
+ * Time complexity is O(logn) using binary search algorithm
+ * Space complexity is O(1).
+ *
+ */
 public class FindMinimumInRotatedArray {
 
 	public static void main(String[] args) {
