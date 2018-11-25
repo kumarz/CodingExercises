@@ -1,7 +1,7 @@
 package kumar.coding.exercises.problemSolving;
 /**
  * We need to reverse the digits that are binary and find its compliment.
- * Time complexity is O(n)
+ * Time complexity is O(row*col)
  * @author Kumar
  *
  */

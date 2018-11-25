@@ -1,4 +1,4 @@
-package kumar.coding.exercises.problemSolving.Arrays;
+package kumar.coding.exercises.problemSolving;
 
 /**
  * This is an island problem solving to figure out the number of islands available in a 2D matrix
