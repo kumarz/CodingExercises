@@ -11,12 +11,12 @@ import java.util.Scanner;
  */
 
 public class BinarySearchAlgorithmRotatedSortedArray {
-	private static int[] sample = {1,3,5,6};
+	private static int[] sample = {5,6,1,2,3,4};
 	public static void main (String[]args){
 		System.out.println("Please enter an item to be Searched: ");
 		Scanner sc = new Scanner(System.in);
 		int input = sc.nextInt();
-		int output = binarySearch(input);
+		int output = binarySearchIterative(sample,input);
 		if(output == -1){
 			System.out.println("Your element is not found !");
 		}else{
@@ -45,7 +45,7 @@ public class BinarySearchAlgorithmRotatedSortedArray {
         return -1;
 	}
 	
-	public int binarySearchIterative(int[] nums, int target) {
+	public static int binarySearchIterative(int[] nums, int target) {
 	    int left = 0;
 	    int right= nums.length-1;
 	 

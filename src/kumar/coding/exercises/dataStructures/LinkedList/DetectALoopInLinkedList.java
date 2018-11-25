@@ -26,20 +26,35 @@ public class DetectALoopInLinkedList {
 		head.next.next.next = head.next;
 		
 		System.out.println("Is loop exist: " + isLoopExist(head));
+		System.out.println("Is loop exist: " + approach2(head));
 		
 	}
 	
 	public static boolean isLoopExist(Node head){
 		while(head != null){
-			if(visited.contains(new Integer(head.value))){
+			if(visited.contains(head.value)){
 				System.out.println("A loop has been detected at "+ head.value);
 				return true;
 			}
 			visited.add(head.value);
-			if(head.next != null && head.next.next != null){
-				head = head.next.next;
-			}else{
-				head = null;
+			head = head.next;
+		}
+		return false;
+	}
+	
+	public static boolean approach2(Node head){
+		if(head == null){
+			return false;
+		}
+		
+		Node fast = head;
+		Node slow = head;
+		while(fast != null && fast.next != null){
+			fast = fast.next.next;
+			slow = slow.next;
+			if(slow == fast){
+				System.out.println("A loop has been detected at "+ slow.value);
+				return true;
 			}
 		}
 		return false;
