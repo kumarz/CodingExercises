@@ -4,7 +4,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+/**
+ * Time complexity is  O(n * k)
+ * Space complexity is O(n)
+ * @author Kumar
+ *
+ */
 public class DistinctKCharacterSubstring {
 
 	public static void main(String[] args) {
